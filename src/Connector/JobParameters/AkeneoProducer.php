@@ -57,13 +57,6 @@ use Akeneo\Component\Batch\Job\JobParameters\DefaultValuesProviderInterface;
         return array_replace($this->baseDefaultValuesProvider->getDefaultValues(), [
             'with_media' => false,
             'filters' => [
-                'data' => [
-                    [
-                        'field' => 'enabled',
-                        'operator' => '=',
-                        'value' => true
-                    ]
-                ],
                 'structure' => [
                     'scope' => 'ecommerce',
                     'locales' => $this->locales
